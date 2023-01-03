@@ -1,10 +1,15 @@
 export default function Marker(props) {
+  const { handleJumpToSlide, markerIndex, imagesLength } = props;
   return (
     <div className="slider--marker">
-      {Array.from({ length: 5 }, (_, index) => {
+      {Array.from({ length: imagesLength }, (_, index) => {
         return (
           <span
-            className={`slider--marker--items ${index === 0 && "selected"}`}
+            key={index}
+            className={`slider--marker--items ${
+              index === markerIndex && "selected"
+            }`}
+            onClick={handleJumpToSlide}
           ></span>
         );
       })}
