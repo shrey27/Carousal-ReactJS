@@ -9,7 +9,7 @@ export default function Marker(props) {
             className={`slider--marker--items ${
               index === markerIndex && "selected"
             }`}
-            onClick={handleJumpToSlide}
+            onClick={() => handleJumpToSlide(index)}
           ></span>
         );
       })}
