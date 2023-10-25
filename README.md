@@ -1,6 +1,6 @@
 # Re-usable Carosual
 
-### Teach Stack - React JS
+### Tech Stack - React JS
 
 ### How to run the program in local
 
